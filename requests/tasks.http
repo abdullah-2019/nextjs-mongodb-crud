@@ -1,0 +1,30 @@
+@api = http://localhost:3000/api/tasks
+
+### get tasks
+{{api}}
+
+### create task
+POST {{api}}
+Content-Type: application/json
+
+{
+  "title": "second task 2",
+  "description": "second desc"
+}
+
+### some validation
+POST {{api}}
+
+### get single task
+GET {{api}}/64c347322fb76f285655e882
+
+### Update a single task
+PUT {{api}}/64c347322fb76f285655e882
+Content-Type: application/json
+
+{
+  "title": "I have to create a next app"
+}
+
+### delete a single task
+DELETE {{api}}/64c347322fb76f285655e882
